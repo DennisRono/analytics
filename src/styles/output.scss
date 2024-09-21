@@ -1256,6 +1256,10 @@ video {
   width: 100vw;
 }
 
+.w-1\/4 {
+  width: 25%;
+}
+
 .min-w-10 {
   min-width: 2.5rem;
 }
@@ -2190,6 +2194,10 @@ video {
   background-color: hsl(var(--nextui-danger-50) / var(--nextui-danger-50-opacity, var(--tw-bg-opacity))) !important;
 }
 
+.bg-\[var\(--modal-background\)\] {
+  background-color: var(--modal-background);
+}
+
 .bg-background {
   background-color: var(--background);
 }
@@ -2277,11 +2285,6 @@ video {
 
 .bg-foreground {
   background-color: var(--foreground);
-}
-
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .bg-green-500 {
@@ -2390,10 +2393,6 @@ video {
 .bg-yellow-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
-}
-
-.bg-\[var\(--modal-background\)\] {
-  background-color: var(--modal-background);
 }
 
 .bg-stripe-gradient {

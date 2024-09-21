@@ -125,11 +125,11 @@ export default function AnalyticsPage() {
           <h2 className="text-xl font-semibold mb-4 flex items-center">
             <LineChart className="mr-2 text-blue-500" /> User Growth
           </h2>
-          <div className="h-64 flex items-end">
-            {[30, 40, 35, 50, 49, 60, 70, 91, 125].map((value, index) => (
+          <div className="h-64 flex items-end w-full">
+            {[30, 40, 35, 50, 49, 60, 70, 91, 100].map((value, index) => (
               <div
                 key={index}
-                className="bg-blue-500 w-1/9 mr-1"
+                className="bg-blue-500 w-1/4 mr-1"
                 style={{ height: `${value}%` }}
               ></div>
             ))}
@@ -150,7 +150,7 @@ export default function AnalyticsPage() {
           </h2>
           <div className="h-64 flex items-end">
             {[60, 45, 80, 30, 20].map((value, index) => (
-              <div key={index} className="w-1/5 mr-1">
+              <div key={index} className="w-1/5 mr-1 h-full">
                 <div
                   className="bg-green-500"
                   style={{ height: `${value}%` }}

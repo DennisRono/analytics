@@ -18,7 +18,7 @@ import {
   Moon,
 } from 'lucide-react'
 import Link from 'next/link'
-import AnalyticsPage from '@/pages/dash'
+import AnalyticsPage from './dash'
 import { useAppDispatch, useAppSelector } from '@/store/hooks'
 import { setTheme } from '@/store/slices/themeSlice'
 
