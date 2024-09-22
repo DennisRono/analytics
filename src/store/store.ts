@@ -1,5 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
 import themeReducer from './slices/themeSlice'
+import tabReducer from './slices/dashTabSlice'
 import { persistReducer, persistStore } from 'redux-persist'
 import { combineReducers } from 'redux'
 import storage from './useWebStorage'
@@ -11,6 +12,7 @@ const persistConfig = {
 
 const allReducers = combineReducers({
   theme: themeReducer,
+  dashtab: tabReducer,
 })
 
 const persistedReducer = persistReducer(persistConfig, allReducers)
